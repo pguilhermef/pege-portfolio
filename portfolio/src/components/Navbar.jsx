@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
-import Logo_light from '../images/logo-light.png'
+import Logo_light from '../images/pege-logos/logo-light.png'
 
 export class Navbar extends Component {
   render() {
