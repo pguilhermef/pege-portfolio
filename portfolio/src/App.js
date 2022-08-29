@@ -13,12 +13,6 @@ function App() {
         <Switch>
           <Route
           exact
-          path=''
-          component={NotFound}
-          />
-          
-          <Route
-          exact
           path='/wallpapers'
           component={Wallpapers}
           />
@@ -29,6 +23,11 @@ function App() {
           component={Home}
           />
 
+          <Route
+          exact
+          path=''
+          component={NotFound}
+          />
         </Switch>
       <Footer />
     </div>
