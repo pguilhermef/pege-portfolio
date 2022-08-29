@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import pegePhoto from '../images/pege-about-pic/pege-photo.jpg'
+import '../css/Home.css'
 
 export class Home extends Component {
   constructor(){
@@ -31,8 +32,8 @@ export class Home extends Component {
   render() {
     const { studiedDays } =  this.state
     return (
-      <main>
-        <div>
+      <main className='home'>
+        <div className='sobre-mim'>
           <h3>Quem sou eu?</h3>
 
           <p>Eu sou o Paulo Guilherme, e estou estudando Desenvolvimento Web há { studiedDays } meses. Sou apaixonado em criar, automatizar e entender como as coisas funcionam. Nas horas vagas sou criador de conteúdo.
@@ -53,7 +54,7 @@ export class Home extends Component {
           </p>
         </div>
         <div>
-          <img src={pegePhoto} alt='Foto de Paulo Guilherme Fidelis' width='600px'/>
+          <img src={pegePhoto} alt='Foto de Paulo Guilherme Fidelis' className='photo' />
         </div>
       </main>
     )
