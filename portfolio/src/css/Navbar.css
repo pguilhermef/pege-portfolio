@@ -1,0 +1,32 @@
+* {
+  margin: 0%;
+  /* background-color: #191919; */
+  color: #fafafa;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: #191919;
+  margin: 2%;
+}
+
+.navbar-links-container {
+  display: flex;
+  gap: 15px;
+  font-size: medium;
+}
+
+.navbar-link {
+  text-decoration: none;
+  padding: 10px;
+}
+
+.navbar-link:hover, .navbar-link:focus {
+  text-decoration: underline;
+  text-underline-offset: 7px;
+}
+
+.logo {
+  margin-right: 2%;
+}
