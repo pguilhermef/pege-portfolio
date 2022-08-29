@@ -4,12 +4,19 @@ import Home from './components/Home';
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
 import Wallpapers from './components/Wallpapers';
+import NotFound from './components/NotFound';
 
 function App() {
   return (
     <div>
       <Navbar />
         <Switch>
+          <Route
+          exact
+          path=''
+          component={NotFound}
+          />
+          
           <Route
           exact
           path='/wallpapers'
@@ -21,6 +28,7 @@ function App() {
           path='/'
           component={Home}
           />
+
         </Switch>
       <Footer />
     </div>
